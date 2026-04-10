@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Specs — Nutrigain</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🍴</div>
+      <span class="nav-logo-text">Nutrigain<span>.</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="how-to-use.html">How to Use</a></li>
+      <li><a href="product-specs.html">Product Specs</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ── Page Header ─────────────────────────────────────────── -->
+<header class="page-header">
+  <div class="container page-header-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">/</span>
+      <span class="current">Product Specs</span>
+    </div>
+    <p class="page-header-label">Technical Documentation</p>
+    <h1>Product Specifications</h1>
+    <p>The technical architecture, coding languages, API integrations, and verification plan behind Nutrigain.</p>
+  </div>
+</header>
+
+<!-- ── Tech Stack ──────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2.5rem">
+      <p class="section-label">Technology</p>
+      <h2 class="section-title">How We'll Build It</h2>
+    </div>
+
+    <div class="spec-grid fade-in">
+      <!-- Languages & Framework -->
+      <div class="spec-card">
+        <div class="spec-card-title"><span>⚙️</span> Language &amp; Framework</div>
+        <div style="display:flex; flex-wrap:wrap; gap:0.3rem; margin-bottom:1rem">
+          <span class="tech-pill primary">Python</span>
+          <span class="tech-pill teal">Streamlit</span>
+          <span class="tech-pill">FastAPI</span>
+          <span class="tech-pill">JavaScript</span>
+          <span class="tech-pill">HTML / CSS</span>
+        </div>
+        <p style="font-size:0.88rem">Python + Streamlit for rapid prototyping in a familiar, flexible stack. FastAPI handles the backend REST API layer between the frontend interface and AI services.</p>
+      </div>
+
+      <!-- Database & Cloud -->
+      <div class="spec-card">
+        <div class="spec-card-title"><span>🗄️</span> Database &amp; Cloud</div>
+        <div style="display:flex; flex-wrap:wrap; gap:0.3rem; margin-bottom:1rem">
+          <span class="tech-pill primary">PostgreSQL</span>
+          <span class="tech-pill teal">Redis</span>
+          <span class="tech-pill">Microsoft Azure</span>
+        </div>
+        <ul class="spec-list">
+          <li>PostgreSQL for persistent user data, meal logs, and nutrition records</li>
+          <li>Redis for session caching and real-time crowding data (low-latency reads)</li>
+          <li>Azure for scalable backend hosting and ML model management</li>
+        </ul>
+      </div>
+
+      <!-- Architecture -->
+      <div class="spec-card" style="grid-column:1/-1">
+        <div class="spec-card-title"><span>🏗️</span> System Architecture</div>
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-top:0.5rem">
+          <div style="background:var(--off-white); border-radius:10px; padding:1.25rem; text-align:center">
+            <div style="font-size:1.8rem; margin-bottom:0.5rem">📱</div>
+            <div style="font-weight:700; font-size:0.85rem; margin-bottom:0.3rem; color:var(--navy)">Frontend</div>
+            <div style="font-size:0.78rem; color:var(--gray)">Streamlit UI<br>Mobile-Responsive</div>
+          </div>
+          <div style="background:var(--off-white); border-radius:10px; padding:1.25rem; text-align:center; position:relative">
+            <div style="position:absolute; left:-8px; top:50%; transform:translateY(-50%); font-size:1.2rem; color:var(--orange)">→</div>
+            <div style="font-size:1.8rem; margin-bottom:0.5rem">⚡</div>
+            <div style="font-weight:700; font-size:0.85rem; margin-bottom:0.3rem; color:var(--navy)">API Layer</div>
+            <div style="font-size:0.78rem; color:var(--gray)">FastAPI<br>REST endpoints</div>
+          </div>
+          <div style="background:var(--off-white); border-radius:10px; padding:1.25rem; text-align:center; position:relative">
+            <div style="position:absolute; left:-8px; top:50%; transform:translateY(-50%); font-size:1.2rem; color:var(--orange)">→</div>
+            <div style="font-size:1.8rem; margin-bottom:0.5rem">🤖</div>
+            <div style="font-weight:700; font-size:0.85rem; margin-bottom:0.3rem; color:var(--navy)">AI Services</div>
+            <div style="font-size:0.78rem; color:var(--gray)">OpenAI Vision<br>GPT-4o-mini</div>
+          </div>
+          <div style="background:var(--off-white); border-radius:10px; padding:1.25rem; text-align:center; position:relative">
+            <div style="position:absolute; left:-8px; top:50%; transform:translateY(-50%); font-size:1.2rem; color:var(--orange)">→</div>
+            <div style="font-size:1.8rem; margin-bottom:0.5rem">🗄️</div>
+            <div style="font-weight:700; font-size:0.85rem; margin-bottom:0.3rem; color:var(--navy)">Database</div>
+            <div style="font-size:0.78rem; color:var(--gray)">PostgreSQL<br>Redis Cache</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── API Integrations ─────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2.5rem">
+      <p class="section-label">External APIs</p>
+      <h2 class="section-title">API Integrations</h2>
+    </div>
+    <div class="grid-3 fade-in">
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow); border-top:4px solid var(--orange)">
+        <div style="font-size:2rem; margin-bottom:0.75rem">🍽️</div>
+        <h3 style="font-size:1rem; margin-bottom:0.5rem">Nutrislice API</h3>
+        <p style="font-size:0.87rem; margin-bottom:0.75rem">Primary source for live OSU dining menus and nutrition data. Provides item-level calorie, macro, and allergen data for all campus dining locations.</p>
+        <span style="font-size:0.78rem; background:rgba(196,75,34,0.1); color:var(--orange); padding:2px 8px; border-radius:4px; font-weight:600">PRIMARY SOURCE</span>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow); border-top:4px solid var(--teal)">
+        <div style="font-size:2rem; margin-bottom:0.75rem">🥦</div>
+        <h3 style="font-size:1rem; margin-bottom:0.5rem">USDA FoodData Central</h3>
+        <p style="font-size:0.87rem; margin-bottom:0.75rem">Fallback source for macro and micronutrient data when items are not recognized by Nutrislice. Covers 300,000+ food items.</p>
+        <span style="font-size:0.78rem; background:rgba(42,157,143,0.1); color:var(--teal); padding:2px 8px; border-radius:4px; font-weight:600">FALLBACK SOURCE</span>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow); border-top:4px solid #7c3aed">
+        <div style="font-size:2rem; margin-bottom:0.75rem">👁️</div>
+        <h3 style="font-size:1rem; margin-bottom:0.5rem">OpenAI Vision API</h3>
+        <p style="font-size:0.87rem; margin-bottom:0.75rem">Converts a food photo into likely items ranked by confidence score. Powers the AI Meal Scanner feature — core Sprint 1 feature.</p>
+        <span style="font-size:0.78rem; background:rgba(124,58,237,0.1); color:#7c3aed; padding:2px 8px; border-radius:4px; font-weight:600">AI SCANNER</span>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow); border-top:4px solid #3b82f6">
+        <div style="font-size:2rem; margin-bottom:0.75rem">💬</div>
+        <h3 style="font-size:1rem; margin-bottom:0.5rem">GPT-4o-mini</h3>
+        <p style="font-size:0.87rem; margin-bottom:0.75rem">Supports short natural-language dining questions such as "What gluten-free options are available tonight?" Fast and cost-efficient inference.</p>
+        <span style="font-size:0.78rem; background:rgba(59,130,246,0.1); color:#3b82f6; padding:2px 8px; border-radius:4px; font-weight:600">AI CHATBOT</span>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow); border-top:4px solid #16a34a">
+        <div style="font-size:2rem; margin-bottom:0.75rem">🗺️</div>
+        <h3 style="font-size:1rem; margin-bottom:0.5rem">Leaflet Maps</h3>
+        <p style="font-size:0.87rem; margin-bottom:0.75rem">Provides a no-cost, open-source way to support location-aware dining hall lookups. Renders the campus map with real-time busyness overlays.</p>
+        <span style="font-size:0.78rem; background:rgba(22,163,74,0.1); color:#16a34a; padding:2px 8px; border-radius:4px; font-weight:600">MAPS / LOCATION</span>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow); border-top:4px solid var(--navy)">
+        <div style="font-size:2rem; margin-bottom:0.75rem">🎓</div>
+        <h3 style="font-size:1rem; margin-bottom:0.5rem">OSU Student Records</h3>
+        <p style="font-size:0.87rem; margin-bottom:0.75rem">Via university partnership (OTDI/FERPA-compliant). Pulls dietary restrictions and meal plan swipe balances on first login for zero manual setup.</p>
+        <span style="font-size:0.78rem; background:rgba(13,27,53,0.1); color:var(--navy); padding:2px 8px; border-radius:4px; font-weight:600">PROFILE SYNC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Key Coding Structures ────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2.5rem">
+      <p class="section-label">Code Architecture</p>
+      <h2 class="section-title">Key Coding Structures</h2>
+    </div>
+    <div class="spec-grid fade-in">
+      <div class="spec-card">
+        <div class="spec-card-title"><span>🔧</span> Backend — FastAPI Endpoint Example</div>
+        <div class="code-block">
+<span class="keyword">from</span> fastapi <span class="keyword">import</span> FastAPI, UploadFile
+<span class="keyword">from</span> services <span class="keyword">import</span> ai_scanner, nutrislice, tracker
+
+app = FastAPI()
+
+<span class="comment"># AI Meal Scanner endpoint</span>
+<span class="func">@app.post</span>(<span class="string">"/scan-meal"</span>)
+<span class="keyword">async def</span> <span class="func">scan_meal</span>(image: UploadFile, user_id: str):
+    items = <span class="keyword">await</span> ai_scanner.<span class="func">identify_items</span>(image)
+    nutrition = nutrislice.<span class="func">get_nutrition</span>(items)
+    <span class="keyword">await</span> tracker.<span class="func">log_meal</span>(user_id, nutrition)
+    <span class="keyword">return</span> {<span class="string">"items"</span>: items, <span class="string">"nutrition"</span>: nutrition}
+
+<span class="comment"># Live crowding endpoint</span>
+<span class="func">@app.get</span>(<span class="string">"/dining-halls/crowding"</span>)
+<span class="keyword">async def</span> <span class="func">get_crowding</span>():
+    <span class="keyword">return</span> redis_cache.<span class="func">get</span>(<span class="string">"hall_crowding"</span>)
+        </div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-card-title"><span>🤖</span> AI Chatbot Integration</div>
+        <div class="code-block">
+<span class="keyword">import</span> openai
+<span class="keyword">from</span> db <span class="keyword">import</span> get_menu_context
+
+<span class="keyword">def</span> <span class="func">query_dining_chatbot</span>(question: str, user_id: str):
+    context = <span class="func">get_menu_context</span>(user_id)
+
+    response = openai.chat.completions.<span class="func">create</span>(
+        model=<span class="string">"gpt-4o-mini"</span>,
+        messages=[
+            {<span class="string">"role"</span>: <span class="string">"system"</span>,
+             <span class="string">"content"</span>: <span class="string">f"You are a campus dining assistant. {context}"</span>},
+            {<span class="string">"role"</span>: <span class="string">"user"</span>,
+             <span class="string">"content"</span>: question}
+        ],
+        max_tokens=<span class="string">200</span>
+    )
+    <span class="keyword">return</span> response.choices[<span class="string">0</span>].message.content
+        </div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-card-title"><span>🗄️</span> Database Schema (Core Tables)</div>
+        <div class="code-block">
+<span class="comment">-- Users table</span>
+<span class="keyword">CREATE TABLE</span> users (
+    id          UUID <span class="keyword">PRIMARY KEY</span>,
+    osu_id      VARCHAR(10) <span class="keyword">UNIQUE NOT NULL</span>,
+    dietary     TEXT[],     <span class="comment">-- ['vegan','gluten_free']</span>
+    cal_goal    INTEGER <span class="keyword">DEFAULT</span> <span class="string">2000</span>,
+    created_at  TIMESTAMP
+);
+
+<span class="comment">-- Meal logs table</span>
+<span class="keyword">CREATE TABLE</span> meal_logs (
+    id          UUID <span class="keyword">PRIMARY KEY</span>,
+    user_id     UUID <span class="keyword">REFERENCES</span> users(id),
+    logged_at   TIMESTAMP,
+    calories    INTEGER,
+    protein_g   DECIMAL,
+    carbs_g     DECIMAL,
+    fat_g       DECIMAL,
+    items       JSONB
+);
+        </div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-card-title"><span>⚡</span> Redis Caching Strategy</div>
+        <div class="code-block">
+<span class="keyword">import</span> redis
+<span class="keyword">import</span> json
+
+redis_client = redis.<span class="func">Redis</span>(host=<span class="string">'localhost'</span>)
+
+<span class="keyword">def</span> <span class="func">update_hall_crowding</span>(hall_id: str, pct: int):
+    <span class="comment"># Update every 2 minutes from sensor feed</span>
+    data = {
+        <span class="string">"hall_id"</span>: hall_id,
+        <span class="string">"occupancy_pct"</span>: pct,
+        <span class="string">"status"</span>: <span class="func">classify_status</span>(pct),
+        <span class="string">"updated_at"</span>: datetime.<span class="func">utcnow</span>()
+    }
+    redis_client.<span class="func">setex</span>(
+        f<span class="string">"hall:{hall_id}"</span>,
+        <span class="string">120</span>,            <span class="comment"># TTL: 2 minutes</span>
+        json.<span class="func">dumps</span>(data)
+    )
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Primary Functions ────────────────────────────────────── -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2.5rem">
+      <p class="section-label" style="color:#f08a6e">Core Functionality</p>
+      <h2 class="section-title" style="color:white">Primary Functions</h2>
+    </div>
+    <div class="grid-2 fade-in">
+      <div>
+        <div style="display:flex; flex-direction:column; gap:1rem">
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start">
+            <div style="width:40px; height:40px; background:rgba(196,75,34,0.25); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.1rem">F1</div>
+            <div>
+              <div style="font-weight:700; color:white; margin-bottom:0.25rem">Centralized Nutrition Access</div>
+              <div style="font-size:0.85rem; color:rgba(255,255,255,0.6)">Display calorie, macro, and allergen data for every OSU dining hall menu item within 1 tap, sourced from OSU Nutrislice.</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start">
+            <div style="width:40px; height:40px; background:rgba(42,157,143,0.25); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.1rem">F2</div>
+            <div>
+              <div style="font-weight:700; color:white; margin-bottom:0.25rem">Real-Time Crowding Visibility</div>
+              <div style="font-size:0.85rem; color:rgba(255,255,255,0.6)">Color-coded hall occupancy status updated within ±2 minutes of actual sensor change, with 99% uptime SLA.</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start">
+            <div style="width:40px; height:40px; background:rgba(59,130,246,0.25); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.1rem">F3</div>
+            <div>
+              <div style="font-weight:700; color:white; margin-bottom:0.25rem">Reduced Decision Fatigue</div>
+              <div style="font-size:0.85rem; color:rgba(255,255,255,0.6)">AI chatbot reduces decision fatigue by checking options across all campus locations at once using natural language.</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start">
+            <div style="width:40px; height:40px; background:rgba(196,75,34,0.25); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.1rem">F4</div>
+            <div>
+              <div style="font-weight:700; color:white; margin-bottom:0.25rem">AI Meal Scanning &amp; Logging</div>
+              <div style="font-size:0.85rem; color:rgba(255,255,255,0.6)">Photo-to-nutrition pipeline using OpenAI Vision, auto-logging to tracker. Zero manual data entry required.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="display:flex; flex-direction:column; gap:1rem">
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start">
+            <div style="width:40px; height:40px; background:rgba(42,157,143,0.25); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.1rem">F5</div>
+            <div>
+              <div style="font-weight:700; color:white; margin-bottom:0.25rem">Dietary Profile Auto-Sync</div>
+              <div style="font-size:0.85rem; color:rgba(255,255,255,0.6)">Restrictions loaded from OSU student records with zero manual entry at first login. FERPA-compliant data access.</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start">
+            <div style="width:40px; height:40px; background:rgba(59,130,246,0.25); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.1rem">F6</div>
+            <div>
+              <div style="font-weight:700; color:white; margin-bottom:0.25rem">Schedule-Aware Alerts</div>
+              <div style="font-size:0.85rem; color:rgba(255,255,255,0.6)">Proactive push notifications tied to class schedule and menu dietary compatibility, powered by Firebase Cloud Messaging.</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start">
+            <div style="width:40px; height:40px; background:rgba(196,75,34,0.25); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.1rem">F7</div>
+            <div>
+              <div style="font-weight:700; color:white; margin-bottom:0.25rem">Habit Tracking Dashboard</div>
+              <div style="font-size:0.85rem; color:rgba(255,255,255,0.6)">Weekly nutrition summary, streak tracking, and personalized meal recommendations. Top 3 suggestions matched to goals.</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start">
+            <div style="width:40px; height:40px; background:rgba(42,157,143,0.25); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.1rem">F8</div>
+            <div>
+              <div style="font-weight:700; color:white; margin-bottom:0.25rem">Swipe Balance Management</div>
+              <div style="font-size:0.85rem; color:rgba(255,255,255,0.6)">Track meal plan swipe balance and flag when weekly usage is running high. Integrates with OSU campus card system.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Requirements Table ───────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2rem">
+      <p class="section-label">Formal Requirements</p>
+      <h2 class="section-title">Updated Requirements Table</h2>
+      <p class="section-subtitle">Formal, testable requirements derived from validated user needs — OSU App Integration.</p>
+    </div>
+    <div class="fade-in" style="overflow-x:auto">
+      <table class="req-table">
+        <thead>
+          <tr>
+            <th style="width:40px">#</th>
+            <th style="width:130px">Category</th>
+            <th style="width:140px">User Need</th>
+            <th>Requirement</th>
+            <th style="width:80px">Priority</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight:700">1</td>
+            <td>Nutrition Access</td>
+            <td>Easy access to nutrition info</td>
+            <td>System displays calorie, macro, and allergen data for every OSU dining hall menu item within 1 tap, sourced directly from OSU Nutrislice.</td>
+            <td><span class="priority-high">High</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight:700">2</td>
+            <td>Nutrition Access</td>
+            <td>Dietary filter support</td>
+            <td>Dietary restrictions loaded from student records with zero manual entry required at first login.</td>
+            <td><span class="priority-high">High</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight:700">3</td>
+            <td>Real-Time Dining Info</td>
+            <td>Live crowding visibility</td>
+            <td>System shall display color-coded (Green/Yellow/Red) hall occupancy status updated within ±2 minutes of actual sensor change, with 99% uptime.</td>
+            <td><span class="priority-high">High</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight:700">4</td>
+            <td>Real-Time Dining Info</td>
+            <td>Schedule-aware alerts</td>
+            <td>Support nearby-hall alerts tied to schedule and menu fit.</td>
+            <td><span class="priority-high">High</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight:700">5</td>
+            <td>Decision Fatigue</td>
+            <td>AI meal recommendations</td>
+            <td>Show top 3 meal recommendations matched to dietary goals and hall availability.</td>
+            <td><span class="priority-medium">Medium</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight:700">6</td>
+            <td>Decision Fatigue</td>
+            <td>Swipe balance management</td>
+            <td>Track swipe balance and flag when weekly usage is running high.</td>
+            <td><span class="priority-medium">Medium</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight:700">7</td>
+            <td>Habit Tracking</td>
+            <td>Weekly nutrition progress</td>
+            <td>Provide a weekly nutrition summary that highlights progress at a glance.</td>
+            <td><span class="priority-medium">Medium</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight:700">8</td>
+            <td>Chatbot Interface</td>
+            <td>Natural language queries</td>
+            <td>Answer natural-language dining questions with fast, real-time results.</td>
+            <td><span class="priority-medium">Medium</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── Unit Testing & Verification ─────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2.5rem">
+      <p class="section-label">Quality Assurance</p>
+      <h2 class="section-title">Unit Testing &amp; Verification Plan</h2>
+    </div>
+    <div class="spec-grid fade-in">
+      <div class="spec-card">
+        <div class="spec-card-title"><span>🧪</span> Unit Testing Strategy</div>
+        <ul class="spec-list">
+          <li><strong>pytest</strong> for all Python backend functions — API endpoints, data transformations, and nutrition calculation logic</li>
+          <li><strong>Test Nutrislice scraper</strong> outputs against known OSU menu items (calorie within ±5% tolerance)</li>
+          <li><strong>Test AI scanner</strong> confidence scores on 20 standard OSU meal photos — target ≥80% item match rate</li>
+          <li><strong>Test chatbot responses</strong> on 50 pre-defined dining queries with expected output validation</li>
+          <li><strong>Redis cache TTL tests</strong> — verify hall crowding data never exceeds 2-minute staleness</li>
+          <li><strong>Database integrity tests</strong> — verify meal log entries persist correctly across sessions</li>
+        </ul>
+      </div>
+      <div class="spec-card">
+        <div class="spec-card-title"><span>✅</span> Requirement Verification Matrix</div>
+        <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.25rem">
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:0.6rem; background:var(--off-white); border-radius:8px; font-size:0.85rem">
+            <span>Req #1 — Nutrition within 1 tap</span>
+            <span style="background:rgba(22,163,74,0.1); color:#16a34a; padding:2px 8px; border-radius:4px; font-size:0.75rem; font-weight:600">DEMO + TEST</span>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:0.6rem; background:var(--off-white); border-radius:8px; font-size:0.85rem">
+            <span>Req #2 — Zero manual dietary entry</span>
+            <span style="background:rgba(22,163,74,0.1); color:#16a34a; padding:2px 8px; border-radius:4px; font-size:0.75rem; font-weight:600">AUTOMATED TEST</span>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:0.6rem; background:var(--off-white); border-radius:8px; font-size:0.85rem">
+            <span>Req #3 — ±2 min crowding update, 99% uptime</span>
+            <span style="background:rgba(234,179,8,0.1); color:#ca8a04; padding:2px 8px; border-radius:4px; font-size:0.75rem; font-weight:600">LOAD TEST</span>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:0.6rem; background:var(--off-white); border-radius:8px; font-size:0.85rem">
+            <span>Req #4 — Schedule-aware alerts fire correctly</span>
+            <span style="background:rgba(22,163,74,0.1); color:#16a34a; padding:2px 8px; border-radius:4px; font-size:0.75rem; font-weight:600">INTEGRATION TEST</span>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:0.6rem; background:var(--off-white); border-radius:8px; font-size:0.85rem">
+            <span>Req #5 — Top 3 meal recommendations shown</span>
+            <span style="background:rgba(22,163,74,0.1); color:#16a34a; padding:2px 8px; border-radius:4px; font-size:0.75rem; font-weight:600">UNIT TEST</span>
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:0.6rem; background:var(--off-white); border-radius:8px; font-size:0.85rem">
+            <span>Req #8 — Chatbot response &lt;3 seconds</span>
+            <span style="background:rgba(234,179,8,0.1); color:#ca8a04; padding:2px 8px; border-radius:4px; font-size:0.75rem; font-weight:600">PERFORMANCE TEST</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sprint Plan -->
+      <div class="spec-card" style="grid-column:1/-1">
+        <div class="spec-card-title"><span>🚀</span> MVP Sprint Plan</div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:0.5rem">
+          <div style="background:rgba(196,75,34,0.06); border:1px solid rgba(196,75,34,0.15); border-radius:var(--radius); padding:1.5rem">
+            <div style="font-weight:800; color:var(--orange); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:1rem">Sprint 1 — Core</div>
+            <ul style="list-style:none; font-size:0.87rem; color:#4a5568">
+              <li style="margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--orange); flex-shrink:0">✓</span> AI meal scanner (OpenAI Vision)</li>
+              <li style="margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--orange); flex-shrink:0">✓</span> Dining chatbot (GPT-4o-mini)</li>
+              <li style="margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--orange); flex-shrink:0">✓</span> Dietary profile sync from records</li>
+              <li style="display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--orange); flex-shrink:0">✓</span> Nutrislice menu data pipeline</li>
+            </ul>
+          </div>
+          <div style="background:rgba(42,157,143,0.06); border:1px solid rgba(42,157,143,0.15); border-radius:var(--radius); padding:1.5rem">
+            <div style="font-weight:800; color:var(--teal); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:1rem">Sprint 2 — Real-Time</div>
+            <ul style="list-style:none; font-size:0.87rem; color:#4a5568">
+              <li style="margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--teal); flex-shrink:0">◯</span> Live crowding dashboard</li>
+              <li style="margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--teal); flex-shrink:0">◯</span> Schedule-aware notifications</li>
+              <li style="margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--teal); flex-shrink:0">◯</span> Leaflet Maps integration</li>
+              <li style="display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--teal); flex-shrink:0">◯</span> Redis caching layer</li>
+            </ul>
+          </div>
+          <div style="background:rgba(13,27,53,0.04); border:1px solid rgba(13,27,53,0.1); border-radius:var(--radius); padding:1.5rem">
+            <div style="font-weight:800; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:1rem">Sprint 3 — Polish</div>
+            <ul style="list-style:none; font-size:0.87rem; color:#4a5568">
+              <li style="margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--navy); flex-shrink:0">◯</span> Habit tracking dashboard</li>
+              <li style="margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--navy); flex-shrink:0">◯</span> Swipe balance management</li>
+              <li style="margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--navy); flex-shrink:0">◯</span> Performance optimization</li>
+              <li style="display:flex; gap:0.5rem; align-items:flex-start"><span style="color:var(--navy); flex-shrink:0">◯</span> OSU pilot deployment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0">
+      <div class="nav-logo">
+        <div class="nav-logo-icon">🍴</div>
+        <span class="nav-logo-text">Nutrigain<span>.</span></span>
+      </div>
+      <p>&copy; 2025 Nutrigain · The Ohio State University · IBE Program</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

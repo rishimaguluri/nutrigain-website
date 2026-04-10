@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrigain — Campus Dining. Smarter.</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🍴</div>
+      <span class="nav-logo-text">Nutrigain<span>.</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="how-to-use.html">How to Use</a></li>
+      <li><a href="product-specs.html">Product Specs</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">🏫 Built for Ohio State University</div>
+        <h1>Campus Dining.<br><span class="highlight">Smarter.</span></h1>
+        <p>Nutrigain eliminates nutritional blind spots and waiting-time uncertainty in OSU dining halls — letting students eat healthy, on time, every day.</p>
+        <div class="hero-actions">
+          <a href="how-to-use.html" class="btn btn-primary">See How It Works</a>
+          <a href="product-specs.html" class="btn btn-secondary">Product Specs</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num" data-target="42" data-suffix="%">0%</div>
+            <div class="hero-stat-label">students eat out multiple times/week</div>
+          </div>
+          <div>
+            <div class="hero-stat-num" data-target="10" data-suffix="%">0%</div>
+            <div class="hero-stat-label">hit daily fruit &amp; vegetable goals</div>
+          </div>
+          <div>
+            <div class="hero-stat-num" data-prefix="$" data-target="16.3" data-suffix="M">$0M</div>
+            <div class="hero-stat-label">total addressable market</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Mockup -->
+      <div class="phone-mockup">
+        <div class="phone-glow"></div>
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-header">
+              <div class="phone-header-title">Nutrigain</div>
+              <div class="phone-header-sub">OSU Dining Assistant</div>
+            </div>
+            <div style="display:flex; border-bottom:1px solid rgba(255,255,255,0.1)">
+              <div class="phone-tab active">TODAY</div>
+              <div class="phone-tab">STREAK</div>
+              <div class="phone-tab">LEFT</div>
+            </div>
+            <div class="phone-content">
+              <div class="phone-greeting">Good Morning, <b>Anna!</b></div>
+              <div class="phone-stats-row">
+                <div class="phone-stat-card">
+                  <div class="num">500</div>
+                  <div class="lbl">kcal</div>
+                </div>
+                <div class="phone-stat-card">
+                  <div class="num" style="color:#34d399">11-day</div>
+                  <div class="lbl">streak</div>
+                </div>
+                <div class="phone-stat-card">
+                  <div class="num">1290</div>
+                  <div class="lbl">cal left</div>
+                </div>
+              </div>
+              <div class="phone-section-title">
+                Dining Halls <span class="live-badge">LIVE</span>
+              </div>
+              <div class="dining-card">
+                <div>
+                  <div class="dining-card-name">Scott Traditions</div>
+                  <div class="dining-card-sub">📍 0.3 mi · ⏱ 3-5 min</div>
+                </div>
+                <span class="status-badge status-green">Not Busy</span>
+              </div>
+              <div class="dining-card">
+                <div>
+                  <div class="dining-card-name">Kennedy Commons</div>
+                  <div class="dining-card-sub">📍 0.5 mi · ⏱ 15+ min</div>
+                </div>
+                <span class="status-badge status-red">Very Busy</span>
+              </div>
+              <div class="dining-card">
+                <div>
+                  <div class="dining-card-name">Morrill Commons</div>
+                  <div class="dining-card-sub">📍 0.7 mi · ⏱ 8-10 min</div>
+                </div>
+                <span class="status-badge status-yellow">Moderate</span>
+              </div>
+              <div class="phone-streak">
+                <div class="streak-num">7</div>
+                <div class="streak-txt">Day Streak! Keep it up — you've logged meals every day this week 🔥</div>
+              </div>
+            </div>
+            <div class="phone-bottom-nav">
+              <a class="active"><span class="icon">🏠</span>Home</a>
+              <a><span class="icon">📷</span>Scanner</a>
+              <a><span class="icon">📊</span>Tracker</a>
+              <a><span class="icon">💬</span>Chat</a>
+              <a><span class="icon">🗺</span>Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Problem ─────────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in">
+      <p class="section-label">The Problem</p>
+      <h2 class="section-title">Campus Dining Is Broken</h2>
+      <p class="section-subtitle">Students waste time, miss nutrition goals, and navigate outdated systems with no real-time data.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card fade-in fade-in-delay-1">
+        <div class="problem-icon">⏰</div>
+        <h3>Time Wasted</h3>
+        <p>Students waste time hunting for nutrition data across clunky platforms like Nutrislice. "Checking Nutrislice takes way too long."</p>
+      </div>
+      <div class="problem-card fade-in fade-in-delay-2">
+        <div class="problem-icon">📊</div>
+        <h3>No Real-Time Data</h3>
+        <p>No live dining hall crowding info — leads to guessing, frustration, and missed classes. "I would love to see tables before I walk the entire hall!"</p>
+      </div>
+      <div class="problem-card fade-in fade-in-delay-3">
+        <div class="problem-icon">🥗</div>
+        <h3>Unhealthy by Default</h3>
+        <p>42% eat out multiple times a week; only 10% hit recommended daily fruits &amp; vegetables. "I knew what I shouldn't eat — I still did, it was easier to access."</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:2.5rem">
+      <p style="font-style:italic; color:var(--gray); font-size:0.95rem; max-width:640px; margin:0 auto; border-left:3px solid var(--orange); padding-left:1rem; text-align:left">
+        <strong>Task:</strong> Navigate campus dining to select and log meals aligned with nutritional needs — without wasting time or missing class.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Value Prop ───────────────────────────────────────────── -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="value-prop-box fade-in">
+      <p>"A mobile platform that eliminates nutritional blind spots and waiting-time uncertainty in OSU dining halls — letting students eat healthy, on time, every day."</p>
+    </div>
+    <div class="features-grid" style="margin-top:3rem">
+      <div class="feature-card fade-in fade-in-delay-1">
+        <div class="feature-icon fi-orange">💬</div>
+        <h3>AI Chatbot</h3>
+        <p>Natural language queries — ask "What's a high-protein vegan option at Baker under 500 cal?" and get instant answers.</p>
+      </div>
+      <div class="feature-card fade-in fade-in-delay-2">
+        <div class="feature-icon fi-teal">📷</div>
+        <h3>AI Meal Scanner</h3>
+        <p>Photograph your meal tray. AI identifies food items and logs full nutrition data with zero manual entry required.</p>
+      </div>
+      <div class="feature-card fade-in fade-in-delay-3">
+        <div class="feature-icon fi-orange">🚦</div>
+        <h3>Live Crowding Alerts</h3>
+        <p>Color-coded Green/Yellow/Red hall occupancy status updated within ±2 minutes of actual sensor change, with 99% uptime.</p>
+      </div>
+      <div class="feature-card fade-in fade-in-delay-1">
+        <div class="feature-icon fi-blue">⚙️</div>
+        <h3>"Set &amp; Forget" Profile</h3>
+        <p>Dietary restrictions auto-loaded from student records. Zero manual entry required at first login.</p>
+      </div>
+      <div class="feature-card fade-in fade-in-delay-2">
+        <div class="feature-icon fi-teal">📈</div>
+        <h3>Habit Dashboard</h3>
+        <p>Weekly nutritional goal progress, streak tracking, and personalized dining recommendations powered by AI.</p>
+      </div>
+      <div class="feature-card fade-in fade-in-delay-3">
+        <div class="feature-icon fi-orange">🔔</div>
+        <h3>Smart Notifications</h3>
+        <p>Schedule-aware alerts: "You have 20 min before class — Baker has low wait time and GF options today."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── User Persona ─────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2.5rem">
+      <p class="section-label">User Persona</p>
+      <h2 class="section-title">Meet Our User</h2>
+    </div>
+    <div class="persona-card fade-in">
+      <div class="persona-left">
+        <div class="persona-avatar">👩‍🎓</div>
+        <div class="persona-name">MAX</div>
+        <div class="persona-meta">
+          Age 20 | Sophomore<br>
+          Public Health Major<br>
+          On-Campus Resident
+        </div>
+        <div class="persona-tags">
+          <span class="persona-tag">Vegan</span>
+          <span class="persona-tag">Gluten Free</span>
+          <span class="persona-tag">High Tech Literacy</span>
+        </div>
+      </div>
+      <div class="persona-right">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem">
+          <div>
+            <p class="persona-section-title orange">Pain Points</p>
+            <ul class="persona-list">
+              <li>No centralized calorie &amp; macro data</li>
+              <li>Vegan/GF options buried or unclear</li>
+              <li>No real-time crowding visibility</li>
+            </ul>
+          </div>
+          <div>
+            <p class="persona-section-title teal">Gains</p>
+            <ul class="persona-list teal">
+              <li>Eat nutritiously aligned to her needs</li>
+              <li>Maximize short windows between classes</li>
+              <li>Avoid guesswork and dining stress</li>
+            </ul>
+          </div>
+        </div>
+        <div class="persona-quote">
+          "I can get something, but it's a problem that I can't be healthy without making it a hassle."
+          <div style="font-size:0.8rem; margin-top:0.5rem; color:var(--gray)">— Interviewee, OSU Student</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Competitor Comparison ────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:0.5rem">
+      <p class="section-label">Why Nutrigain</p>
+      <h2 class="section-title">Current Solutions Fall Short</h2>
+      <p class="section-subtitle">No competitor combines real-time campus dining data + nutritional tracking + schedule integration tailored to student life.</p>
+    </div>
+    <div class="fade-in" style="overflow-x:auto; margin-top:2rem">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>MyFitnessPal</th>
+            <th>Nutrislice</th>
+            <th>CollegeMacros</th>
+            <th>Google Maps</th>
+            <th class="highlight">Nutrigain ✓</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Real-time wait times (campus-wide)</td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="partial">~</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Accurate nutrition data</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Campus dining integration</td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Schedule awareness</td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>No manual data entry</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Ease of use</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ─────────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="container">
+    <p class="section-label" style="color:#f08a6e">Get Started</p>
+    <h2>Ready to eat smarter on campus?</h2>
+    <p>Explore how Nutrigain brings real-time data, AI nutrition tracking, and smart recommendations to OSU dining.</p>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; position:relative; z-index:1">
+      <a href="how-to-use.html" class="btn btn-primary">How to Use</a>
+      <a href="our-story.html" class="btn btn-secondary">Our Story</a>
+      <a href="team.html" class="btn btn-teal">Meet the Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="nav-logo-icon">🍴</div>
+          <span class="nav-logo-text">Nutrigain<span>.</span></span>
+        </div>
+        <p>A mobile platform that eliminates nutritional blind spots and waiting-time uncertainty in OSU dining halls.</p>
+        <p style="font-size:0.82rem; color:rgba(255,255,255,0.35)">The Ohio State University · IBE Capstone Project</p>
+      </div>
+      <div>
+        <div class="footer-heading">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="how-to-use.html">How to Use</a></li>
+          <li><a href="product-specs.html">Product Specs</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Features</div>
+        <ul class="footer-links">
+          <li><a href="how-to-use.html#ai-scanner">AI Meal Scanner</a></li>
+          <li><a href="how-to-use.html#chatbot">AI Chatbot</a></li>
+          <li><a href="how-to-use.html#crowding">Live Crowding</a></li>
+          <li><a href="how-to-use.html#tracker">Habit Tracker</a></li>
+          <li><a href="how-to-use.html#map">Dining Map</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Team</div>
+        <ul class="footer-links">
+          <li><a href="team/landry-lies.html">Landry Lies</a></li>
+          <li><a href="team/rishi-maguluri.html">Rishi Maguluri</a></li>
+          <li><a href="team/sujay-nalla.html">Sujay Nalla</a></li>
+          <li><a href="team/varsha-viswapriyan.html">Varsha Viswapriyan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Nutrigain. All rights reserved.</p>
+      <p class="footer-osu">Built at The Ohio State University · IBE Program</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

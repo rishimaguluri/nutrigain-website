@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Use — Nutrigain</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🍴</div>
+      <span class="nav-logo-text">Nutrigain<span>.</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="how-to-use.html">How to Use</a></li>
+      <li><a href="product-specs.html">Product Specs</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ── Page Header ─────────────────────────────────────────── -->
+<header class="page-header">
+  <div class="container page-header-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">/</span>
+      <span class="current">How to Use</span>
+    </div>
+    <p class="page-header-label">User Guide</p>
+    <h1>How to Use Nutrigain</h1>
+    <p>From opening the app to logging your meal — here's how every feature works so you can eat healthy, on time, every day.</p>
+  </div>
+</header>
+
+<!-- ── UX Flow Diagram ─────────────────────────────────────── -->
+<section class="section section-alt" id="ux-flow">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:1.5rem">
+      <p class="section-label">UX Design</p>
+      <h2 class="section-title">System User Flow</h2>
+      <p class="section-subtitle">From the moment a student opens the app, every step works together to surface the right meal, at the right hall, at the right time.</p>
+    </div>
+
+    <div class="flow-diagram fade-in">
+      <div class="flow-title">NUTRIGATE — COMPLETE USER FLOW DIAGRAM</div>
+
+      <!-- Row 1: Entry -->
+      <div style="display:flex; justify-content:center; margin-bottom:0.4rem">
+        <div class="flow-node navy" style="text-align:center; min-width:160px">
+          👤 Student/User<br>
+          <span style="font-size:0.68rem; font-weight:400; color:#6b7280">Opens Campus App</span>
+        </div>
+      </div>
+      <div class="flow-arrow-down">↓</div>
+
+      <!-- Row 2: Home -->
+      <div style="display:flex; justify-content:center; margin-bottom:0.4rem">
+        <div class="flow-node orange" style="min-width:200px; text-align:center">
+          🏠 View Home<br>
+          <span style="font-size:0.68rem; font-weight:400">Nutritional overview · Scan or Track</span>
+        </div>
+      </div>
+      <div class="flow-arrow-down">↓</div>
+
+      <!-- Row 3: Branch out -->
+      <div style="display:flex; justify-content:center; gap:1rem; margin-bottom:0.4rem; flex-wrap:wrap">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:0.3rem">
+          <div class="flow-node" style="min-width:100px; font-size:0.72rem; text-align:center">📷 Scanner Tab</div>
+          <div class="flow-arrow-down">↓</div>
+          <div class="flow-node teal" style="min-width:100px; font-size:0.68rem; text-align:center">Upload meal photo<br>or take picture</div>
+          <div class="flow-arrow-down">↓</div>
+          <div class="flow-node orange" style="min-width:100px; font-size:0.68rem; text-align:center">SYNC nutrition<br>data to Tracker</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; align-items:center; gap:0.3rem">
+          <div class="flow-node" style="min-width:100px; font-size:0.72rem; text-align:center">📊 Tracker Tab</div>
+          <div class="flow-arrow-down">↓</div>
+          <div class="flow-node teal" style="min-width:100px; font-size:0.68rem; text-align:center">Weekly progress<br>· macros · goals</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; align-items:center; gap:0.3rem">
+          <div class="flow-node" style="min-width:100px; font-size:0.72rem; text-align:center">💬 Chat Tab</div>
+          <div class="flow-arrow-down">↓</div>
+          <div class="flow-node teal" style="min-width:100px; font-size:0.68rem; text-align:center">AI chatbot<br>dining FAQs</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; align-items:center; gap:0.3rem">
+          <div class="flow-node" style="min-width:100px; font-size:0.72rem; text-align:center">🗺 Map Tab</div>
+          <div class="flow-arrow-down">↓</div>
+          <div class="flow-node teal" style="min-width:100px; font-size:0.68rem; text-align:center">Nearest hall<br>+ busyness</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; align-items:center; gap:0.3rem">
+          <div class="flow-node" style="min-width:100px; font-size:0.72rem; text-align:center">👤 Profile Tab</div>
+          <div class="flow-arrow-down">↓</div>
+          <div class="flow-node teal" style="min-width:100px; font-size:0.68rem; text-align:center">Dietary sync<br>from records</div>
+        </div>
+      </div>
+
+      <div class="flow-arrow-down" style="margin:0.5rem 0">↓</div>
+      <div style="display:flex; justify-content:center">
+        <div class="flow-node orange" style="min-width:240px; text-align:center">
+          🔄 User Active in Tab<br>
+          <span style="font-size:0.68rem; font-weight:400">Loop back to selection or end session</span>
+        </div>
+      </div>
+
+      <!-- Data sync note -->
+      <div style="margin-top:2rem; padding:1rem; background:var(--off-white); border-radius:var(--radius); border-left:3px solid var(--teal)">
+        <div style="font-size:0.8rem; font-weight:700; color:var(--teal); margin-bottom:0.3rem">🔌 Campus Dining System (Background)</div>
+        <div style="font-size:0.82rem; color:var(--gray)">Syncs dining hall crowding data in real time · Syncs student records (if applicable) · Syncs real-time menu options/availability</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Core Process Flow ────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2.5rem">
+      <p class="section-label">Core Process</p>
+      <h2 class="section-title">What Happens When You Open the App</h2>
+    </div>
+    <div class="fade-in" style="background:var(--navy); border-radius:var(--radius-lg); padding:2.5rem; overflow-x:auto">
+      <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; justify-content:center; min-width:600px">
+        <div style="background:rgba(255,255,255,0.1); border-radius:10px; padding:1rem; text-align:center; min-width:120px">
+          <div style="font-size:1.5rem">📱</div>
+          <div style="font-size:0.75rem; color:white; font-weight:600; margin-top:0.3rem">User Opens App</div>
+        </div>
+        <div style="color:var(--orange); font-size:1.5rem; font-weight:700">→</div>
+        <div style="background:rgba(255,255,255,0.1); border-radius:10px; padding:1rem; text-align:center; min-width:120px">
+          <div style="font-size:1.5rem">📅</div>
+          <div style="font-size:0.75rem; color:white; font-weight:600; margin-top:0.3rem">Schedule Refreshes<br>Busyness Updates</div>
+        </div>
+        <div style="color:var(--orange); font-size:1.5rem; font-weight:700">→</div>
+        <div style="background:rgba(255,255,255,0.1); border-radius:10px; padding:1rem; text-align:center; min-width:120px">
+          <div style="font-size:1.5rem">🏫</div>
+          <div style="font-size:0.75rem; color:white; font-weight:600; margin-top:0.3rem">Hall Recommendations<br>Populate</div>
+        </div>
+        <div style="color:var(--orange); font-size:1.5rem; font-weight:700">→</div>
+        <div style="background:rgba(196,75,34,0.3); border:1px solid rgba(196,75,34,0.5); border-radius:10px; padding:1rem; text-align:center; min-width:120px">
+          <div style="font-size:1.5rem">✅</div>
+          <div style="font-size:0.75rem; color:white; font-weight:600; margin-top:0.3rem">User Chooses Hall<br>Menu Filters Applied</div>
+        </div>
+        <div style="color:var(--orange); font-size:1.5rem; font-weight:700">→</div>
+        <div style="background:rgba(42,157,143,0.3); border:1px solid rgba(42,157,143,0.5); border-radius:10px; padding:1rem; text-align:center; min-width:120px">
+          <div style="font-size:1.5rem">🍽️</div>
+          <div style="font-size:0.75rem; color:white; font-weight:600; margin-top:0.3rem">Student Orders<br>&amp; Tracks Intake</div>
+        </div>
+        <div style="color:var(--orange); font-size:1.5rem; font-weight:700">→</div>
+        <div style="background:rgba(255,255,255,0.1); border-radius:10px; padding:1rem; text-align:center; min-width:120px">
+          <div style="font-size:1.5rem">📊</div>
+          <div style="font-size:0.75rem; color:white; font-weight:600; margin-top:0.3rem">Food Tracker<br>Refreshes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Feature Walkthroughs ─────────────────────────────────── -->
+<section class="section section-alt" id="ai-scanner">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2.5rem">
+      <p class="section-label">Step-by-Step Guide</p>
+      <h2 class="section-title">Using Each Feature</h2>
+    </div>
+    <div class="steps-grid">
+
+      <!-- Feature 1 -->
+      <div class="step-card fade-in">
+        <div class="step-num">1</div>
+        <div class="step-icon">👤</div>
+        <h3>Set Up Your Profile</h3>
+        <p>On first login, Nutrigain auto-syncs your dietary restrictions from OSU student records. No manual entry required. You can also set weekly nutrition goals.</p>
+        <div style="margin-top:1rem; background:var(--off-white); border-radius:8px; padding:0.75rem; font-size:0.82rem; color:var(--gray)">
+          💡 <strong>Pro tip:</strong> Set your calorie and protein targets in Profile tab to unlock personalized recommendations.
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="step-card fade-in fade-in-delay-1" id="crowding">
+        <div class="step-num">2</div>
+        <div class="step-icon">🚦</div>
+        <h3>Check Live Crowding</h3>
+        <p>The Home tab shows all nearby dining halls with Green/Yellow/Red busyness indicators updated within ±2 minutes. Tap any hall to see estimated wait time and today's menu.</p>
+        <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap">
+          <span style="background:#dcfce7; color:#16a34a; padding:3px 10px; border-radius:20px; font-size:0.78rem; font-weight:600">🟢 Not Busy (&lt;30%)</span>
+          <span style="background:#fef9c3; color:#ca8a04; padding:3px 10px; border-radius:20px; font-size:0.78rem; font-weight:600">🟡 Moderate (30–70%)</span>
+          <span style="background:#fee2e2; color:#dc2626; padding:3px 10px; border-radius:20px; font-size:0.78rem; font-weight:600">🔴 Very Busy (&gt;70%)</span>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="step-card fade-in fade-in-delay-2">
+        <div class="step-num">3</div>
+        <div class="step-icon">🗺️</div>
+        <h3>Find the Nearest Hall</h3>
+        <p>The Map tab shows you the closest dining halls and on-campus restaurants. Filter by distance, busyness, or dietary compatibility to find the best option before class.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="step-card fade-in" id="chatbot">
+        <div class="step-num">4</div>
+        <div class="step-icon">💬</div>
+        <h3>Ask the AI Chatbot</h3>
+        <p>Type natural language questions like "What's a high-protein vegan option at Baker tonight?" or "How many swipes do I have left?" and get instant answers.</p>
+        <div style="margin-top:1rem; background:var(--off-white); border-radius:8px; padding:0.75rem">
+          <div style="font-size:0.8rem; color:var(--gray); margin-bottom:0.5rem; font-weight:600">Example queries:</div>
+          <div style="font-size:0.8rem; color:var(--dark); font-style:italic">"Is anything gluten-free at Morrill tonight?"</div>
+          <div style="font-size:0.8rem; color:var(--dark); font-style:italic">"What dining halls are open right now?"</div>
+          <div style="font-size:0.8rem; color:var(--dark); font-style:italic">"Show me meals under 600 cal with 30g protein"</div>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="step-card fade-in fade-in-delay-1">
+        <div class="step-num">5</div>
+        <div class="step-icon">📷</div>
+        <h3>Scan Your Meal</h3>
+        <p>In the Scanner tab, take a photo of your meal tray or upload from gallery. AI powered by OpenAI Vision identifies each food item and logs full nutrition data automatically.</p>
+        <ol style="margin-top:0.75rem; padding-left:1.2rem; font-size:0.88rem; color:var(--gray)">
+          <li>Tap Scanner tab</li>
+          <li>Take photo or upload from gallery</li>
+          <li>Review identified items</li>
+          <li>Confirm to sync to Tracker</li>
+        </ol>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="step-card fade-in fade-in-delay-2" id="tracker">
+        <div class="step-num">6</div>
+        <div class="step-icon">📈</div>
+        <h3>Track Your Progress</h3>
+        <p>The Tracker tab provides a weekly nutrition summary showing calories, macros, and progress toward your goals. Earn streak badges for consistent logging.</p>
+        <div style="margin-top:1rem; display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; text-align:center">
+          <div style="background:rgba(196,75,34,0.08); border-radius:8px; padding:0.6rem; font-size:0.8rem"><span style="font-size:1.2rem">🔥</span><br>Streak Tracking</div>
+          <div style="background:rgba(42,157,143,0.08); border-radius:8px; padding:0.6rem; font-size:0.8rem"><span style="font-size:1.2rem">📊</span><br>Macro Breakdown</div>
+          <div style="background:rgba(13,27,53,0.05); border-radius:8px; padding:0.6rem; font-size:0.8rem"><span style="font-size:1.2rem">🎯</span><br>Goal Progress</div>
+          <div style="background:rgba(196,75,34,0.08); border-radius:8px; padding:0.6rem; font-size:0.8rem"><span style="font-size:1.2rem">💡</span><br>AI Insights</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Smart Notifications ───────────────────────────────────── -->
+<section class="section section-dark">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center">
+      <div class="fade-in">
+        <p class="section-label" style="color:#f08a6e">Smart Alerts</p>
+        <h2 class="section-title" style="color:white">Proactive Notifications</h2>
+        <p style="color:rgba(255,255,255,0.7); margin-bottom:1.5rem">Nutrigain learns your schedule and preferences to send timely alerts — so you never miss a meal window or get stuck in a long line.</p>
+        <ul style="list-style:none">
+          <li style="display:flex; align-items:flex-start; gap:0.75rem; margin-bottom:1rem; color:rgba(255,255,255,0.8); font-size:0.93rem">
+            <span style="color:var(--orange); font-size:1rem; flex-shrink:0; margin-top:2px">✓</span>
+            Schedule-aware alerts based on your class calendar
+          </li>
+          <li style="display:flex; align-items:flex-start; gap:0.75rem; margin-bottom:1rem; color:rgba(255,255,255,0.8); font-size:0.93rem">
+            <span style="color:var(--orange); font-size:1rem; flex-shrink:0; margin-top:2px">✓</span>
+            Low swipe balance warnings before end of week
+          </li>
+          <li style="display:flex; align-items:flex-start; gap:0.75rem; margin-bottom:1rem; color:rgba(255,255,255,0.8); font-size:0.93rem">
+            <span style="color:var(--orange); font-size:1rem; flex-shrink:0; margin-top:2px">✓</span>
+            Dietary-compatible meal availability alerts
+          </li>
+          <li style="display:flex; align-items:flex-start; gap:0.75rem; color:rgba(255,255,255,0.8); font-size:0.93rem">
+            <span style="color:var(--orange); font-size:1rem; flex-shrink:0; margin-top:2px">✓</span>
+            Weekly nutrition summary and streak milestones
+          </li>
+        </ul>
+      </div>
+      <div class="fade-in fade-in-delay-1">
+        <!-- Notification mockups -->
+        <div style="display:flex; flex-direction:column; gap:0.75rem">
+          <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12); border-radius:14px; padding:1.1rem 1.25rem; display:flex; align-items:flex-start; gap:0.75rem">
+            <div style="font-size:1.4rem; flex-shrink:0">🍴</div>
+            <div>
+              <div style="font-size:0.82rem; font-weight:700; color:white; margin-bottom:0.2rem">Nutrigain · Class Alert</div>
+              <div style="font-size:0.78rem; color:rgba(255,255,255,0.65)">ECON 3200 | 2:30 PM | Caldwell Lab<br>32 min left. Scott Lab Cafe is on your route — <strong style="color:var(--teal)">Not Busy</strong> + GF options.</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12); border-radius:14px; padding:1.1rem 1.25rem; display:flex; align-items:flex-start; gap:0.75rem">
+            <div style="font-size:1.4rem; flex-shrink:0">🔥</div>
+            <div>
+              <div style="font-size:0.82rem; font-weight:700; color:white; margin-bottom:0.2rem">Nutrigain · Streak</div>
+              <div style="font-size:0.78rem; color:rgba(255,255,255,0.65)">7-day streak! You've logged every meal this week. You're 43% to your weekly protein goal.</div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(196,75,34,0.3); border-radius:14px; padding:1.1rem 1.25rem; display:flex; align-items:flex-start; gap:0.75rem">
+            <div style="font-size:1.4rem; flex-shrink:0">⚠️</div>
+            <div>
+              <div style="font-size:0.82rem; font-weight:700; color:white; margin-bottom:0.2rem">Nutrigain · Swipe Alert</div>
+              <div style="font-size:0.78rem; color:rgba(255,255,255,0.65)">You have 3 swipes left this week. At your current rate, you may run out by Thursday.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Video Embed Placeholder ──────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:2rem">
+      <p class="section-label">Product Demo</p>
+      <h2 class="section-title">See It in Action</h2>
+    </div>
+    <div class="fade-in" style="background:var(--navy); border-radius:var(--radius-lg); aspect-ratio:16/9; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; max-width:800px; margin:0 auto; box-shadow:var(--shadow-lg)">
+      <div style="width:80px; height:80px; background:rgba(196,75,34,0.2); border:3px solid var(--orange); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.2rem">▶️</div>
+      <div style="text-align:center">
+        <div style="color:white; font-weight:700; font-size:1.1rem; margin-bottom:0.3rem">Nutrigain Product Demo</div>
+        <div style="color:rgba(255,255,255,0.5); font-size:0.88rem">Sprint 1 prototype walkthrough — AI Scanner, Chatbot &amp; Live Crowding</div>
+      </div>
+      <a href="product-specs.html" class="btn btn-primary btn-sm" style="margin-top:0.5rem">View Technical Specs →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0">
+      <div class="nav-logo">
+        <div class="nav-logo-icon">🍴</div>
+        <span class="nav-logo-text">Nutrigain<span>.</span></span>
+      </div>
+      <p>&copy; 2025 Nutrigain · The Ohio State University · IBE Program</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
