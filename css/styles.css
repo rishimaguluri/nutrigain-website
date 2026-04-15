@@ -482,12 +482,17 @@ p  { font-size: 1rem; color: #4a5568; }
 }
 .team-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
 .team-photo {
-  height: 180px;
+  height: 220px;
   background: var(--navy);
   display: flex; align-items: center; justify-content: center;
   font-size: 3rem;
   position: relative;
   overflow: hidden;
+}
+.team-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block;
 }
 .team-photo::before {
   content: '';
@@ -743,6 +748,12 @@ p  { font-size: 1rem; color: #4a5568; }
   margin: 0 auto 1.5rem;
   border: 5px solid rgba(255,255,255,0.15);
   box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+.profile-avatar img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  border-radius: 50%;
 }
 .profile-left { text-align: center; }
 .profile-name { font-size: 2rem; color: var(--white); margin-bottom: 0.25rem; }
