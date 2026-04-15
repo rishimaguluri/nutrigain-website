@@ -482,8 +482,8 @@ p  { font-size: 1rem; color: #4a5568; }
 }
 .team-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
 .team-photo {
-  height: 220px;
-  background: var(--navy);
+  height: 260px;
+  background: var(--light);
   display: flex; align-items: center; justify-content: center;
   font-size: 3rem;
   position: relative;
@@ -494,11 +494,7 @@ p  { font-size: 1rem; color: #4a5568; }
   object-fit: cover; object-position: center top;
   display: block;
 }
-.team-photo::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(circle at 50% 70%, rgba(196,75,34,0.15), transparent 60%);
-}
+.team-photo::before { display: none; }
 .team-initials {
   width: 80px; height: 80px;
   border-radius: 50%;
